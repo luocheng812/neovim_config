@@ -69,20 +69,21 @@ return require('packer').startup(function(use)
   -- telescope end
 
   -- lsp and mason start
-  use('williamboman/mason.nvim')
-  use('williamboman/mason-lspconfig.nvim')
-  use('neovim/nvim-lspconfig')
+  use ('williamboman/mason.nvim')
+  use ('williamboman/mason-lspconfig.nvim')
+  use ('neovim/nvim-lspconfig')
+  -- use ('williamboman/nvim-lsp-installer')
   -- lsp and mason end
 
   -- cmp start
-  use('hrsh7th/nvim-cmp')
-  use('hrsh7th/cmp-nvim-lsp')
-  use('hrsh7th/cmp-vsnip')
-  use('hrsh7th/cmp-path')
-  use('hrsh7th/cmp-buffer')
-  use('hrsh7th/vim-vsnip')
-  use('rafamadriz/friendly-snippets')
-  use('saadparwaiz1/cmp_luasnip')
+  use ('hrsh7th/nvim-cmp')
+  use ('hrsh7th/cmp-nvim-lsp')
+  use ('hrsh7th/cmp-vsnip')
+  use ('hrsh7th/cmp-path')
+  use ('hrsh7th/cmp-buffer')
+  use ('hrsh7th/vim-vsnip')
+  use ('rafamadriz/friendly-snippets')
+  use ('saadparwaiz1/cmp_luasnip')
   -- cmp end
 
   -- debug start
@@ -97,6 +98,8 @@ return require('packer').startup(function(use)
   --
   use 'tanvirtin/monokai.nvim'
   --
+
+  -- use 'davidhalter/jedi-vim'
 
   if packer_bootstrap then
     require('packer').sync()

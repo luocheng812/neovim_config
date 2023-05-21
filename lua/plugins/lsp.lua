@@ -11,8 +11,13 @@ require("mason").setup({
 
 require('mason-lspconfig').setup({
     -- A list of servers to automatically install if they're not already installed
-    ensure_installed = { 'pylsp', 'gopls', 'lua_ls', 'rust_analyzer' },
+    ensure_installed = { 
+        'pylsp', 
+        'lua_ls', 
+        'rust_analyzer' 
+    },
 })
+
 
 -- Set different settings for different languages' LSP
 -- LSP list: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md
@@ -20,6 +25,7 @@ require('mason-lspconfig').setup({
 --     - the settings table is sent to the LSP
 --     - on_attach: a lua callback function to run after LSP atteches to a given buffer
 local lspconfig = require('lspconfig')
+
 
 -- Customized on_attach function
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
