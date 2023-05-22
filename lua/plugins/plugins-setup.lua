@@ -92,11 +92,11 @@ return require('packer').startup(function(use)
   -- debug end
 
   -- rust start
-  use('simrat39/rust-tools.nvim')
+  use ('simrat39/rust-tools.nvim')
   -- rust end
   
   --
-  use 'tanvirtin/monokai.nvim'
+  use ('loctvl842/monokai-pro.nvim')
   --
 
   -- use 'davidhalter/jedi-vim'

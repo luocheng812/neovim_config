@@ -12,7 +12,6 @@ opt.autoindent = true
 opt.wrap = false
 opt.cursorline = true
 
-
 opt.mouse:append("a")
 opt.clipboard:append("unnamedplus")
 
@@ -24,9 +23,6 @@ opt.smartcase = true
 
 opt.termguicolors = true
 opt.signcolumn = "yes"
-
--- Lua
--- vim.cmd[[colorscheme tokyonight-moon]]
 
 -- Vimspector options
 vim.cmd([[
