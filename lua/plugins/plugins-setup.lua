@@ -96,7 +96,7 @@ return require('packer').startup(function(use)
   -- rust end
   
   --
-  use ('loctvl842/monokai-pro.nvim')
+  use ('tanvirtin/monokai.nvim')
   --
 
   -- use 'davidhalter/jedi-vim'

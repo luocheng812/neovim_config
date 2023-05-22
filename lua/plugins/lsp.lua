@@ -62,5 +62,30 @@ end
 
 lspconfig.pylsp.setup({
     on_attach = on_attach,
+    -- pylsp configure: https://github.com/neovim/nvim-lspconfig/blob/master/doc/server_configurations.md#pylsp
+    -- https://github.com/python-lsp/python-lsp-server/blob/develop/CONFIGURATION.md
+    settings = {
+        pylsp = {
+            plugins = {
+                pycodestyle = {
+                    maxLineLength = 120
+                }
+            }
+        }
+    }
 })
+
+-- pip install pylyzer
+-- lspconfig.pylyzer.setup({
+--     settings = {
+--         python = {
+--             checkOnType = false,
+--             diagnostics = true,
+--             inlayHints = true,
+--             smartCompletion = true
+--         }
+--     }
+-- 
+-- }
+)
 
