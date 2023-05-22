@@ -68,7 +68,11 @@ lspconfig.pylsp.setup({
         pylsp = {
             plugins = {
                 pycodestyle = {
-                    maxLineLength = 120
+                    enabled = false,
+                    maxLineLength = 120,
+                },
+                flakes8 = {
+                    enabled = true,
                 }
             }
         }
