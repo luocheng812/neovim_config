@@ -76,16 +76,14 @@ lspconfig.pylsp.setup({
 })
 
 -- pip install pylyzer
--- lspconfig.pylyzer.setup({
---     settings = {
---         python = {
---             checkOnType = false,
---             diagnostics = true,
---             inlayHints = true,
---             smartCompletion = true
---         }
---     }
--- 
--- }
-)
+lspconfig.pylyzer.setup({
+    settings = {
+        python = {
+            checkOnType = false,
+            diagnostics = true,
+            inlayHints = true,
+            smartCompletion = true
+        }
+    }
 
+})
